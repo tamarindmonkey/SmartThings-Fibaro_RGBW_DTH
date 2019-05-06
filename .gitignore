@@ -1,2 +1,26 @@
+# Eclipse files
+/.settings
+/.classpath
+/.project
+/eclipse/
+/target-eclipse
 
-*.db
+# IntelliJ files
+*.iws
+*.iml
+.idea
+/out
+*.ipr
+
+# Gradle files
+.gradletasknamecache
+.gradle/
+
+# Mac OS files
+.DS_Store
+
+#Windows
+Thumbs.db
+
+# Build files
+/build
