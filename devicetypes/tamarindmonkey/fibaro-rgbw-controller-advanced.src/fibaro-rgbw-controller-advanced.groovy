@@ -249,10 +249,10 @@ metadata {
 
         // Energy:
         valueTile("lastReset", "device.lastReset", decoration: "flat", height: 1, width: 2) {
-            state "default", label:'Since:  ${currentValue}', action:"reset", icon: "https://raw.githubusercontent.com/codersaur/SmartThings/master/icons/tile_2x1_stopwatch_reset.png"
+            state "default", label:'Since:  ${currentValue}', action:"reset", icon: "https://raw.githubusercontent.com/tamarindmonkey/SmartThings-Fibaro_RGBW_DTH/master/icons/tile_2x1_stopwatch_reset.png"
         }
         valueTile("energy", "device.energy", height: 1, width: 2) {
-            state "default", label:'${currentValue} kWh', icon: "https://raw.githubusercontent.com/codersaur/SmartThings/master/icons/tile_2x1_top_bottom_2.png"
+            state "default", label:'${currentValue} kWh', icon: "https://raw.githubusercontent.com/tamarindmonkey/SmartThings-Fibaro_RGBW_DTH/master/icons/tile_2x1_top_bottom_2.png"
         }
 
         // Programs:
