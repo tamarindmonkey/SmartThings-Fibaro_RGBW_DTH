@@ -1,20 +1,17 @@
 /**
- *  Copyright David Lomas (codersaur)
+ *  Copyright cram (tamarindmonkey)
  *
  *  SmartThings Device Handler for: Fibaro RGBW Controller EU v2.x (FGRGBWM-441)
  *
- *  Version: 0.04 (2017-04-17)
+ *  Version: 0.01 (2019-05-06)
  *
- *  Source: https://github.com/codersaur/SmartThings/tree/master/devices/fibaro-rgbw-controller
+ *  Source: https://github.com/tamarindmonkey/SmartThings-Fibaro_RGBW_DTH/tree/master/devicetypes/tamarindmonkey/fibaro-rgbw-controller-advanced.src
  *
- *  Author: David Lomas (codersaur)
+ *  Author: cram (tamarindmonkey)
  *
  *  Description: This SmartThings device handler is written for the Fibaro RGBW Controller (FGRGBWM-441). It extends
  *  the native SmartThings device handler to support editing the device's parameters from the SmartThings GUI, and to
  *  support the use of one or more of the controller's channels in IN/OUT mode.
- *
- *  For full information, including installation instructions, exmples, and version history, see:
- *   https://github.com/codersaur/SmartThings/tree/master/devices/fibaro-rgbw-controller
  *
  *  License:
  *   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -28,7 +25,7 @@
  *
  **/
 metadata {
-    definition (name: "Fibaro RGBW Controller (Advanced)", namespace: "codersaur", author: "David Lomas") {
+    definition (name: "Fibaro RGBW Controller (Advanced)", namespace: "tamarindmonkey", author: "cram") {
         capability "Actuator"
         capability "Switch"
         capability "Switch Level"
@@ -244,7 +241,7 @@ metadata {
 
         // Power
         valueTile("powerLabel", "device.power", decoration: "flat", height: 1, width: 2) {
-            state "default", label:'Power:', action:"refresh.refresh", icon: "https://raw.githubusercontent.com/codersaur/SmartThings/master/icons/tile_2x1_refresh.png"
+            state "default", label:'Power:', action:"refresh.refresh", icon: "https://raw.githubusercontent.com/tamarindmonkey/SmartThings-Fibaro_RGBW_DTH/master/icons/tile_2x1_refresh.png"
         }
         valueTile("power", "device.power", decoration: "flat", height: 1, width: 2) {
             state "power", label:'${currentValue} W'
